@@ -70,7 +70,7 @@ def no_recoil():
             no_recoil()
 
 def mouse_move(x, y):
-    bytes = x.to_bytes(4, byteorder = 'big') + shift_y.to_bytes(4, byteorder = 'big') #Bermasalah
+    bytes = x.to_bytes(4, byteorder = 'big') + y.to_bytes(4, byteorder = 'big') #Bermasalah
     ard.write(bytes)
 
 # Hotkeys
