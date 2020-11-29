@@ -44,15 +44,13 @@ def no_recoil():
             time.sleep(0.11)
             
             
-            # Shifting vs reco
             if now:
-                mouse_move()
-                #mouse_move(x, y + shift_y) #Bermasalah
+                shoot()
         except KeyboardInterrupt:
             print('\nNo Reco terminated!')
             no_recoil()
 
-def mouse_move():  
+def shoot():  
     ard.write(b'1')
 # Hotkeys
 def switcher():
