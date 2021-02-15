@@ -13,7 +13,7 @@ if(Serial.available()> 0){
     
     userInput = Serial.read();               // read user input
       if(userInput == '1'){                  // if we get expected value 
-		Mouse.move(960,540, 0)
+		Mouse.click();
       } // if user input 'g' 
   } // Serial.available
 } // Void Loop
